@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Booking</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="book.js" defer></script> 
+    
+    </head>
+    <body style="background-image: #e313df";>
+        <div class="container2">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="t_b.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="fromto-container">
+            <div class="fromto">
+            <label for="from-destination">From:</label>
+<select id="from-destination" name="from-destination">
+
+  <option value="select">Select your location</option>
+  <option value="Kasaragod">Kasaragod</option>
+  <option value="kannur">kannur</option>
+  <option value="Kozhikode">Kozhikode</option>
+  <option value="Wayanad">Wayanad</option>
+  <option value="Palakkad">Palakkad</option>
+</select>
+
+<label for="to-destination">To:</label>
+<select id="to-destination" name="to-destination">
+  <option value="select">Select your location</option>
+  <option value="Kasaragod">Kasaragod</option>
+  <option value="kannur">kannur</option>
+  <option value="Kozhikode">Kozhikode</option>
+  <option value="Wayanad">Wayanad</option>
+  <option value="Palakkad">Palakkad</option>
+</select>
+
+<!-- <label for="from-destination">From:</label>
+<textarea id="from-destination" name="from-destination" rows="1" placeholder="Type your location..." oninput="showSuggestions('from')"></textarea>
+<label for="to-destination">To:</label>
+        <textarea id="to-destination" name="to-destination" rows="1" placeholder="Type your destination..." oninput="showSuggestions('to')"></textarea> -->
+
+<label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+      <button id="search" type="button" onclick="performSearch()">
+        SEARCH TRAIN
+      </button>      
+</div>
+</div>
+<div id="results"></div>
+        </div>
+        
+    </body>
+
+</html>
